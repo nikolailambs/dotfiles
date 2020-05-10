@@ -11,6 +11,7 @@ plugins=(gitfast last-working-dir common-aliases sublime zsh-syntax-highlighting
 export HOMEBREW_NO_ANALYTICS=1
 
 # Actually load Oh-My-Zsh
+ZSH_DISABLE_COMPFIX="true"
 source "${ZSH}/oh-my-zsh.sh"
 
 # Load rbenv if installed
@@ -25,9 +26,14 @@ export PATH="./bin:./node_modules/.bin:${PATH}:/usr/local/sbin"
 # Store your own aliases in the ~/.aliases file and load the here.
 [[ -f "$HOME/.aliases" ]] && source "$HOME/.aliases"
 
+
 # Encoding stuff for the terminal
 export LANG=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
 export BUNDLER_EDITOR="'/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl'"
 export BUNDLER_EDITOR="'/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl'"
+export BUNDLER_EDITOR="'/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl'"
+
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+export PATH="$PATH:$HOME/.rvm/bin"
 export BUNDLER_EDITOR="'/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl'"
