@@ -1,5 +1,5 @@
 {
-	"color_scheme": "Packages/ayu/ayu-dark.tmTheme",
+	"color_scheme": "Packages/ayu/ayu-dark.sublime-color-scheme",
 	"detect_indentation": false,
 	"draw_white_space": true,
 	"ensure_newline_at_eof_on_save": true,
@@ -18,12 +18,14 @@
 	"hot_exit": false,
 	"ignored_packages":
 	[
+		"A File Icon",
+		"AdvancedNewFile",
 		"All Autocomplete",
 		"ApplySyntax",
-		"PackageResourceViewer",
-		"SCSS",
-		"Vintage",
-		"zzz A File Icon zzz"
+		"ayu",
+		"Emmet",
+		"GitGutter",
+		"Vintage"
 	],
 	"remember_open_files": false,
 	"rulers":
